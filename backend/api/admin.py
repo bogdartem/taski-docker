@@ -1,9 +1,13 @@
+"""Admin.py."""
+
 from django.contrib import admin
 
 from .models import Task
 
 
 class TaskAdmin(admin.ModelAdmin):
+    """Класс, определяющий административное представление модели Task."""
+
     list_display = ('title', 'description', 'completed')
 
 
